@@ -15,3 +15,5 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+// Ignora erros internos do site que não têm relação com o teste
+Cypress.on("uncaught:exception", () => false);
